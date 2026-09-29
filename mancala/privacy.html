@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mancala Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Mancala: Kalah, Oware, Congkak by Zenski.">
+  <style>
+    :root {
+      --bg: #f6f1e7; --card: #fffdf8; --ink: #2a2118; --muted: #6b5d4d;
+      --accent: #0f6b5c; --gold: #c98a1b; --line: #e6dccb; --wood: #9a5b2c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #081c1c; --card: #0f2a29; --ink: #f4ecdd; --muted: #b7ab98;
+        --accent: #6fd6c2; --gold: #f2b84b; --line: #1f4240; --wood: #d08a4f;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    header {
+      background: radial-gradient(120% 140% at 50% 0%, #1d8a74 0%, #0b3b37 55%, #061c1c 100%);
+      color: #fff7e8; padding: 56px 16px 72px; text-align: center; position: relative; overflow: hidden;
+    }
+    .board { display: inline-flex; gap: 8px; padding: 10px 14px; border-radius: 40px;
+      background: linear-gradient(#c07a3e, #8a4b1f); box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 2px 0 rgba(255,255,255,.25);
+      margin-bottom: 22px; }
+    .pit { width: 22px; height: 22px; border-radius: 50%; background: #6b3512;
+      box-shadow: inset 0 3px 6px rgba(0,0,0,.45); position: relative; }
+    .pit.store { width: 34px; border-radius: 12px; }
+    .pit::after { content: ""; position: absolute; width: 9px; height: 9px; border-radius: 50%;
+      left: 6px; top: 6px; background: radial-gradient(circle at 30% 30%, #fff, var(--c, #6fd6c2) 45%, #0005 100%); }
+    .pit.store::after { left: 12px; }
+    .pit:nth-child(2) { --c: #ff8a65; } .pit:nth-child(3) { --c: #ffe08a; } .pit:nth-child(4) { --c: #a7c4ff; }
+    .pit:nth-child(5) { --c: #d9a7ff; } .pit:nth-child(6) { --c: #b6f09c; }
+    h1 { font-family: Futura, "Trebuchet MS", sans-serif; font-weight: 800; letter-spacing: .02em;
+      font-size: clamp(30px, 6vw, 46px); margin: 0 0 6px;
+      background: linear-gradient(#fff0aa, #eb9622); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    header p { margin: 0; color: #d9ccb4; }
+    .tag { display: inline-block; margin-top: 14px; padding: 4px 14px; border-radius: 99px;
+      border: 1px solid #f2b84b66; color: #f2d9a0; font-size: 14px; }
+    main { max-width: 760px; margin: -40px auto 0; padding: 0 16px 60px; position: relative; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 24px 22px; margin-bottom: 18px; box-shadow: 0 6px 24px rgba(0,0,0,.06); }
+    .summary { border-top: 4px solid var(--gold); }
+    .summary ul { list-style: none; padding: 0; margin: 0; }
+    .summary li { padding: 8px 0 8px 34px; position: relative; border-bottom: 1px dashed var(--line); }
+    .summary li:last-child { border-bottom: 0; }
+    .summary li::before { content: ""; position: absolute; left: 4px; top: 13px; width: 16px; height: 16px; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff, var(--gold) 50%, #7a4a00 100%); }
+    h2 { font-size: 20px; margin: 0 0 10px; color: var(--accent); display: flex; gap: 10px; align-items: baseline; }
+    h2 .n { font-family: Futura, "Trebuchet MS", sans-serif; color: var(--gold); font-size: 16px; min-width: 22px; }
+    p, li { color: var(--ink); }
+    .muted { color: var(--muted); }
+    ul { padding-left: 22px; margin: 8px 0; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+    nav.toc { columns: 2; column-gap: 24px; font-size: 15px; }
+    nav.toc a { display: block; padding: 3px 0; text-decoration: none; }
+    @media (max-width: 560px) { nav.toc { columns: 1; } .card { padding: 20px 16px; } }
+    footer { text-align: center; color: var(--muted); font-size: 14px; padding: 0 16px 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="board" aria-hidden="true">
+      <span class="pit store"></span><span class="pit"></span><span class="pit"></span><span class="pit"></span>
+      <span class="pit"></span><span class="pit"></span><span class="pit store"></span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>Mancala: Kalah, Oware, Congkak</p>
+    <span class="tag">Last updated: September 29, 2026</span>
+  </header>
+
+  <main>
+    <section class="card summary" aria-labelledby="s-summary">
+      <h2 id="s-summary">The short version</h2>
+      <ul>
+        <li>No account. We never ask for your name, email address or contacts.</li>
+        <li>Your games, settings, statistics and progress stay on your device.</li>
+        <li>The free version shows ads from Google AdMob, which may collect device identifiers and usage data (section 3).</li>
+        <li>The optional "Remove ads" purchase is processed by Google Play or the App Store. We never see your payment details.</li>
+        <li>We do not sell your personal information, and we run no servers or analytics of our own.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <nav class="toc" aria-label="Contents">
+        <a href="#about">1. About this policy</a>
+        <a href="#device">2. Data on your device</a>
+        <a href="#ads">3. Advertising (Google AdMob)</a>
+        <a href="#choices">4. Consent and your choices</a>
+        <a href="#purchases">5. In-app purchases</a>
+        <a href="#not">6. What we do not do</a>
+        <a href="#children">7. Children</a>
+        <a href="#retention">8. Retention and deletion</a>
+        <a href="#security">9. Security</a>
+        <a href="#rights">10. Your rights</a>
+        <a href="#changes">11. Changes</a>
+        <a href="#contact">12. Contact</a>
+      </nav>
+    </section>
+
+    <section class="card" id="about">
+      <h2><span class="n">1</span>About this policy</h2>
+      <p>This policy explains how the mobile game <strong>Mancala: Kalah, Oware, Congkak</strong> (the "App"), published by Zenski ("we", "us"), handles information when you use it on Android or iOS. It applies to every store listing of the App, including its localized names (such as Congklak, Congkak, Sungka, Mangala, Awalé, Kalaha and Oware). The App's package and bundle ID is <code>com.zenski.mancala</code>.</p>
+    </section>
+
+    <section class="card" id="device">
+      <h2><span class="n">2</span>Information stored on your device</h2>
+      <p>The App saves the following locally on your phone or tablet: game settings (sound, vibration, board theme, difficulty, rules variant, animation speed), statistics, win streaks, experience points, ranks, achievements, solved puzzles, saved games, whether you bought "Remove ads", and simple counters used to decide when to ask for a store rating. This data never leaves your device and is not sent to us. Uninstalling the App deletes it.</p>
+    </section>
+
+    <section class="card" id="ads">
+      <h2><span class="n">3</span>Advertising (Google AdMob)</h2>
+      <p>The App uses Google AdMob (the Google Mobile Ads SDK) to show banner, interstitial and optional rewarded ads. To serve ads, personalize them where permitted, measure them and prevent fraud, Google may automatically collect and process:</p>
+      <ul>
+        <li>Device or other identifiers, such as the Android Advertising ID or Apple IDFA (on iOS only if you allow tracking);</li>
+        <li>Approximate location derived from your IP address;</li>
+        <li>App interactions, such as ad views and taps;</li>
+        <li>Diagnostics and crash information related to the ads SDK;</li>
+        <li>Device information, such as model, operating system version and language.</li>
+      </ul>
+      <p>Google collects and processes this data under its own policies. Learn more in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    </section>
+
+    <section class="card" id="choices">
+      <h2><span class="n">4</span>Consent and your choices</h2>
+      <ul>
+        <li><strong>European Economic Area, United Kingdom and Switzerland:</strong> before personalized ads are shown, the App asks for your consent through Google's User Messaging Platform, a certified consent management platform. You can change or withdraw your choice at any time in the App under Settings &rarr; Privacy settings.</li>
+        <li><strong>iOS:</strong> the App asks for permission to track through Apple's App Tracking Transparency prompt. If you decline, your IDFA is not shared and ads are not personalized with it.</li>
+        <li><strong>Android:</strong> you can reset or delete your Advertising ID, or opt out of ads personalization, in your device's Settings &rarr; Google &rarr; Ads (or Settings &rarr; Privacy &rarr; Ads).</li>
+        <li>You can stop all ads by buying "Remove ads" in the App, and stop all data collection by uninstalling the App.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="purchases">
+      <h2><span class="n">5</span>In-app purchases</h2>
+      <p>The optional "Remove ads" purchase is handled entirely by Google Play Billing or the Apple App Store. They share only the purchase status with the App so it can remove ads and restore your purchase. We do not receive or store your payment card or billing details. Purchase data is processed under Google's and Apple's privacy policies.</p>
+    </section>
+
+    <section class="card" id="not">
+      <h2><span class="n">6</span>What we do not do</h2>
+      <p>We do not sell your personal information. We do not run our own servers or analytics, and we do not collect precise location, contacts, photos, files, microphone or camera data.</p>
+    </section>
+
+    <section class="card" id="children">
+      <h2><span class="n">7</span>Children</h2>
+      <p>The App is a general-audience board game and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, contact us and we will help remove it.</p>
+    </section>
+
+    <section class="card" id="retention">
+      <h2><span class="n">8</span>Data retention and deletion</h2>
+      <p>Data stored on your device stays until you delete the App or its data. Data collected by Google for advertising is kept according to Google's policies, and you can reset your advertising identifier at any time. Because we hold no personal data on our own servers, there is nothing for us to delete, but you may contact us with any request.</p>
+    </section>
+
+    <section class="card" id="security">
+      <h2><span class="n">9</span>Security</h2>
+      <p>Data sent by the Google Mobile Ads SDK is encrypted in transit.</p>
+    </section>
+
+    <section class="card" id="rights">
+      <h2><span class="n">10</span>Your rights</h2>
+      <p>Depending on where you live (for example under the GDPR or the California Consumer Privacy Act), you may have rights to access, correct, delete or object to the processing of your personal data, and to withdraw consent. Because the App does not collect personal data on our own servers, most requests are handled through the choices in section 4 or directly with Google. You can also contact us at any time.</p>
+    </section>
+
+    <section class="card" id="changes">
+      <h2><span class="n">11</span>Changes to this policy</h2>
+      <p>We may update this policy from time to time. The date at the top shows the latest version. Significant changes will also be reflected in an App update.</p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2><span class="n">12</span>Contact</h2>
+      <p>Zenski<br>Email: <a href="mailto:info.zenski@gmail.com">info.zenski@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Zenski &middot; <a href="/">zen-ski.github.io</a></footer>
+</body>
+</html>
