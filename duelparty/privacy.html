@@ -43,7 +43,7 @@
 <li>We do not ask you to create an account and we do not collect your name, email address or contacts.</li>
 <li>Player names you type, your settings, match records, statistics and progress are stored only on your device.</li>
 <li>The free version shows ads from Google AdMob. Google may collect device identifiers and usage data to show and measure ads, as described below.</li>
-<li>If the App crashes, an anonymous crash report is sent to Google Firebase Crashlytics so we can fix the problem. The App also downloads game settings (such as how often ads appear) from Google Firebase Remote Config.</li>
+<li>If the App crashes, an anonymous crash report is sent to Google Firebase Crashlytics so we can fix the problem. The App also downloads game settings (such as how often ads appear) from Google Firebase Remote Config, and uses Google Analytics for Firebase only to count how many devices use the App.</li>
 <li>The optional &quot;Premium&quot; purchase (no ads, every theme and unlimited hints) is processed by Google Play or the Apple App Store. We never see your payment details.</li>
 </ul>
 <h2>2. Information stored on your device</h2>
@@ -68,14 +68,15 @@
 <h2>5. In-app purchases</h2>
 <p>The optional &quot;Premium&quot; purchase is handled entirely by Google Play Billing or Apple In-App Purchase. It shares only the purchase status with the App so it can remove ads, unlock every theme and restore your purchase. We do not receive or store your payment card or billing details. Purchase data is processed under Google&#x27;s or Apple&#x27;s privacy policy.</p>
 <h2>6. Crash reports and app settings (Google Firebase)</h2>
-<p>The App uses two Google Firebase services. Neither is used for advertising, and neither receives your player names or match records.</p>
+<p>The App uses three Google Firebase services. None of them is used for advertising, and none receives your player names or match records.</p>
 <ul>
 <li><strong>Firebase Crashlytics</strong>: when the App crashes or hits a serious error, it sends a crash report: the error and the code location (stack trace), which game was open, the App version, device model, operating system version, language, free memory and disk space, and a random Firebase installation identifier. We use these reports only to find and fix bugs. Learn more: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+<li><strong>Google Analytics for Firebase</strong>: used only to count active devices (for example, how many people are playing right now). It records that the App was opened and how long a session lasted, with the App version, device model, operating system, language and approximate country (from the IP address), linked to a random app-instance identifier. The App does not send any custom events, does not collect the advertising identifier for this, and does not allow this data to be used for ads personalisation.</li>
 <li><strong>Firebase Remote Config</strong>: the App downloads a few settings from Google, such as how many matches pass between ads. This request includes the random Firebase installation identifier and basic device and App information.</li>
 </ul>
-<p>Crash reports are kept by Firebase for up to 90 days. The Firebase installation identifier is not linked to your identity and is deleted when you uninstall the App.</p>
+<p>Crash reports are kept by Firebase for up to 90 days and Analytics data for up to 2 months. The Firebase installation identifier is not linked to your identity and is deleted when you uninstall the App.</p>
 <h2>7. What we do not do</h2>
-<p>We do not sell your personal information. We do not run our own servers, we do not use analytics to track you, and we do not collect precise location, contacts, photos, files, microphone or camera data.</p>
+<p>We do not sell your personal information. We do not run our own servers, we do not use analytics to track you or for advertising, and we do not collect precise location, contacts, photos, files, microphone or camera data.</p>
 <h2>8. Children</h2>
 <p>The App is a general-audience game collection that families can play together, but it is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the App, contact us and we will help remove it.</p>
 <h2>9. Data retention and deletion</h2>
